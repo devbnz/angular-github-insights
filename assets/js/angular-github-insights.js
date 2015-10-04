@@ -17,7 +17,6 @@
   function( $http, $q) {
 
     var baseUrl = 'https://api.github.com/';
-  //  var client_id = '&key=AIzaSyCYwYrQTfWWYknZTnwHNLF0IhyUz-grzUw';
 
     return({
             getUser                       : getUser,
@@ -25,8 +24,6 @@
             getRepoBranches               : getRepoBranches,
             getRepoLanguages              : getRepoLanguages,
             runUrl                        : runUrl
-            // GET /repos/:owner/:repo/branches
-            // GET /repos/:owner/:repo/languages
     });
 
 

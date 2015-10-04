@@ -1,0 +1,28 @@
+<div>
+  <h1 class="page-header">{{project.title}}</h1>
+<h2>{{user.login}} / {{user.name}} / {{user.location}}</h2>
+<ul>
+  <li>{{user.followers}} followers</li>
+  <li>{{user.following}} following</li>
+  <li>{{user.public_repos}} public repos</li>
+  <li>{{user.public_gists}} public gists</li>
+</ul>
+<div class="table-responsive">
+<table class="table table-striped">
+<thead>
+<tr>
+<th>Repos</th>
+<th>Description</th>
+<th>Languages</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="repo in repos">
+<td>{{repo.name}}</td>
+<td>{{repo.description}}</td>
+<td>{{result.pageinsights.ruleGroups.USABILITY.score}}</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
